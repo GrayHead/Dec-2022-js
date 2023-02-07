@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    // let x = 0;
+    // x++;
+    // console.log(x); // 1
+    // x--;
+    // console.log(x);//0
+    //
+    // let y = 0;
+    // y = y + 100000; // y = 0+1
+    // console.log(y); // 1
+    // y += 1;
+    // console.log(y);//2
+    // let x = 0;
+    // let y = ++x;
+    // console.log(y);
+
+    // let users = [
+    //     {name: 'vasya', age: 31, status: false},
+    //     {name: 'petya', age: 30, status: true},
+    //     {name: 'kolya', age: 29, status: true},
+    //     {name: 'olya', age: 28, status: false},
+    //     {name: 'max', age: 30, status: true},
+    //     {name: 'anya', age: 31, status: false},
+    //     {name: 'oleg', age: 28, status: false},
+    //     {name: 'andrey', age: 29, status: true},
+    //     {name: 'masha', age: 30, status: true},
+    //     {name: 'olya', age: 31, status: false},
+    //     {name: 'max', age: 31, status: true}
+    // ];
+    //
+    //
+    // for (let i = 0; i < users.length; i++) {
+    //     console.log(users[i]);
+    //
+    // }
+
+
+    // let simpsons = [
+    //     {
+    //         name: 'Bart',
+    //         surname: 'Simpson',
+    //         age: 10,
+    //         info: 'Бартолом\'ю ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.',
+    //         photo: 'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'
+    //     },
+    //     {
+    //         name: 'Homer',
+    //         surname: 'Simpson',
+    //         age: 40,
+    //         info: 'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.',
+    //         photo: 'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
+    //     },
+    //     {
+    //         name: 'Marge',
+    //         surname: 'Simpson',
+    //         age: 38,
+    //         info: 'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.',
+    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'
+    //     },
+    //     {
+    //         name: 'Lisa',
+    //         surname: 'Simpson',
+    //         age: 9,
+    //         info: 'Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.',
+    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'
+    //     },
+    //     {
+    //         name: 'Maggie',
+    //         surname: 'Simpson',
+    //         age: 1,
+    //         info: 'Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.',
+    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
+    //     },
+    // ];
+
+
+    // itar
+    // ritar
+    // for (let i = simpsons.length - 1; i >= 0; i--) {
+    //     const simpson = simpsons[i];
+    //     document.write(`
+    //                     <div class="target">
+    //                         <h2>${simpson.name} ${simpson.surname}</h2>
+    //                         <img src="${simpson.photo}" >
+    //                         <p>${simpson.info}</p>
+    //                     </div>
+    //                 `);
+    //
+    // }
+
+    // iter
+    // for (let simpsonMember of simpsons) {
+    //     document.write(`
+    //                         <div class="target">
+    //                             <h2>${simpsonMember.name} ${simpsonMember.surname}</h2>
+    //                             <img src="${simpsonMember.photo}" >
+    //                             <p>${simpsonMember.info}</p>
+    //                         </div>
+    //                     `);
+    // }
+
+
+    let coursesArray = [
+        {
+            title: 'JavaScript Complex',
+            monthDuration: 5,
+            hourDuration: 909,
+            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+        },
+        {
+            title: 'Java Complex',
+            monthDuration: 6,
+            hourDuration: 909,
+            modules: ['html',
+                'css',
+                'js',
+                'mysql',
+                'mongodb',
+                'angular',
+                'aws',
+                'docker',
+                'git',
+                'java core',
+                'java advanced']
+        },
+        {
+            title: 'Python Complex',
+            monthDuration: 6,
+            hourDuration: 909,
+            modules: ['html',
+                'css',
+                'js',
+                'mysql',
+                'mongodb',
+                'angular',
+                'aws',
+                'docker',
+                'python core',
+                'python advanced']
+        },
+        {
+            title: 'QA Complex',
+            monthDuration: 4,
+            hourDuration: 909,
+            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+        },
+        {
+            title: 'FullStack',
+            monthDuration: 7,
+            hourDuration: 909,
+            modules: ['html',
+                'css',
+                'js',
+                'mysql',
+                'mongodb',
+                'react',
+                'angular',
+                'aws',
+                'docker',
+                'git',
+                'node.js',
+                'python',
+                'java']
+        },
+        {
+            title: 'Frontend',
+            monthDuration: 4,
+            hourDuration: 909,
+            modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+        }
+    ];
+
+    // for (const coursesItem of coursesArray) {
+    //     document.write(`<div>`);
+    //     document.write(`<h2><b>${coursesItem.title}</b></h2>`);
+    //     document.write(`<ul>`);
+    //     for (const module of coursesItem.modules) {
+    //         document.write(`<li>${module}</li>`);
+    //     }
+    //     document.write(`</ul>`);
+    //     document.write(`</div>`);
+    // }
+
+
+    // let i = 0;
+    // while (i < coursesArray.length) {
+    //     // all stuff here
+    //     document.write(`<div>`);
+    //     document.write(`<h2><b>${coursesArray[i].title}</b></h2>`);
+    //     document.write(`<ul>`);
+    //     for (const module of coursesArray[i].modules) {
+    //         document.write(`<li>${module}</li>`);
+    //     }
+    //     document.write(`</ul>`);
+    //     document.write(`</div>`);
+    //     i++;
+    // }
+
+
+    // let i = 0;
+    // do {
+    //     // all stuff here
+    //     document.write(`<div>`);
+    //     document.write(`<h2><b>${coursesArray[i].title}</b></h2>`);
+    //     document.write(`<ul>`);
+    //     for (const module of coursesArray[i].modules) {
+    //         document.write(`<li>${module}</li>`);
+    //     }
+    //     document.write(`</ul>`);
+    //     document.write(`</div>`);
+    //     i++;
+    // } while (i < coursesArray.length)
+
+
+    // let user = {
+    //     name: 'vasya',
+    //     age: 31,
+    //     status: true
+    // };
+    //
+    //
+    // for (let key in user) {
+    //     console.log(key, user[key]);
+    // }
+    //
+    // let arr = [];
+    //
+    // // for (const arrElement of arr) {
+    // //
+    // //
+    // //     if (arrElement === 0) {
+    // //         console.log()
+    // //
+    // //     }
+    // //
+    // //
+    // // }
+
+
+    let users = [
+        {name: 'vasya', age: 31, status: false},
+        {age: 30, status: true, surname: 'pupkin'},
+        {name: 'kolya', age: 29, status: true, foo: 'bar'},
+    ];
+
+    for (const user of users) {
+        console.log(user);
+        for (const userKey in user) {
+            console.log(userKey, '-', user[userKey]);
+        }
+    }
+
+
+
+</script>
+</body>
+
+
+</html>
