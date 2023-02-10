@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+    //    function foo(title, description) {
+    //        let html = `
+    // <div> <h2>${title}</h2> <p>${description}</p> </div>`;
+    //        document.write(html);
+    //    }
+    //
+    //    foo('helloooo!', 'wazzzzzzzauuuaaap');
+    //    foo(undefined, undefined);
+    //    foo('hi', 'otken');
+
+
+    // let users = [
+    //     {name: 'vasya', age: 31, status: false},
+    //     {name: 'petya', age: 30, status: true},
+    //     {name: 'kolya', age: 29, status: true},
+    //     {name: 'olya', age: 28, status: false},
+    //     {name: 'max', age: 30, status: true},
+    //     {name: 'anya', age: 31, status: false},
+    //     {name: 'oleg', age: 28, status: false},
+    //     {name: 'andrey', age: 29, status: true},
+    //     {name: 'masha', age: 30, status: true},
+    //     {name: 'olya', age: 31, status: false},
+    //     {name: 'max', age: 31, status: true}
+    // ];
+    // let products = [
+    //     {
+    //         title: 'milk',
+    //         price: 22,
+    //         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    //     },
+    //     {
+    //         title: 'juice',
+    //         price: 27,
+    //         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    //     },
+    //     {
+    //         title: 'tomato',
+    //         price: 47,
+    //         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    //     },
+    //     {
+    //         title: 'tea',
+    //         price: 15,
+    //         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+    //     },
+    // ];
+    // function looper(arr) {
+    //     for (const element of arr) {
+    //         console.log(element);
+    //     }
+    // }
+    //
+    // looper(users);
+    // looper(products);
+
+
+    // function calculator(num1, num2) {
+    //     return num1 + num2;
+    // }
+    //
+    //
+    // let newVar = [calculator(10, 20), calculator(100, 200)];
+    //
+    // console.log(newVar);
+    // console.log(calculator(10, 20));
+    //
+    // let foo = {
+    //     age: calculator(1, 2),
+    //
+    // }
+    //
+    // console.log(foo);
+
+    // function supercalculator(num1, num2) {
+    //     let obj = {
+    //         dif: num1 - num2,
+    //         add: num1 + num2
+    //
+    //     }
+    //     return obj;
+    // }
+    // let x = supercalculator(10, 20);
+    // console.log(x);
+
+    // function foobar() {
+    //     console.log('foo');
+    // }
+    // function foobar() {
+    //     console.log('bar');
+    // }
+    //
+    // foobar();
+
+
+    // function calc() {
+    //     let bascket = 0;
+    //     for (const num of arguments) {
+    //         bascket = bascket + num;
+    //     }
+    //     return bascket;
+    // }
+    //
+    // console.log(calc(10, 20, 30, 40));
+    //
+    // calc(10, 20);
+    // calc(10, 20, 30);
+
+
+    // function calc2(a = 'asgdjasg', b, ...x) {
+    //     console.log(x);
+    // }
+    //
+    // calc2(1, 2, true, [], {}, 'hi');
+    //
+    // function asd() {
+    //     console.log(arguments);
+    // }
+    //
+    // asd();
+
+
+    // function outer(inner) {
+    //     return inner();
+    // }
+    //
+    // let outer1 = outer(function () {
+    //     return 100
+    // });
+    //
+    // console.log(outer1);
+
+    // function outer() {
+    //     let x = 100;
+    //     function inner() {
+    //         return x;
+    //     }
+    //     return inner;
+    // }
+    //
+    // console.log(outer());
+
+    //
+    // function userCreator(name) {
+    //     let user = {name: name}
+    //     return user;
+    // }
+    //
+    // let u1 = userCreator('vasya');
+    // console.log(u1);
+    // u1.name = true;
+    // console.log(u1);
+
+
+    // function userCreator(name,age) {
+    //     let user = {name: name,age:age}
+    //     return {
+    //         getName: function () {
+    //             return user.name
+    //         },
+    //         setName: function (name) {
+    //             if (typeof name === 'string') {
+    //                 user.name = name;
+    //             } else {
+    //                 console.log('wow wow wow ow ow ow ow')
+    //             }
+    //
+    //         },
+    //         getAge: function () {
+    //             return user.age
+    //         },
+    //         setAge: function (newage){
+    //             if (newage > user.age) {
+    //                 user.age = newage;
+    //             }
+    //         }
+    //
+    //     };
+    // }
+    //
+    // let u1 = userCreator('vasya');
+    // console.log(u1);
+    // u1.setName('kokos');
+    // let name = u1.getName();
+    // console.log(name);
+
+
+    let x = {
+        name: 'vasyas',
+        greeting: function () {
+            console.log('hello my name is ' + this.name);
+            console.log(this);
+        },
+    }
+
+    x.greeting();
+
+
+</script>
+</body>
+</html>
