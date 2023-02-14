@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    // let foo = function () {
+    //     console.log(arguments);
+    // };
+    // foo(1, 2, 3, 3);
+    //
+    //
+    // // console.log(bar);
+    // // let bar = 100;
+
+    // let calculator = (a, b) => a + b;
+    // let calculator = (a, b, action) => {
+    //     let result;
+    //     if (action === '+') {
+    //         result = a + b;
+    //     } else if (action === '-') {
+    //         result = a - b;
+    //     }
+    //     return result;
+    // };
+    //
+    // calculator(10, 20, '+');
+
+
+    // let user = {
+    //     imya: 'vasya',
+    //     age: 31,
+    //     greeting() {
+    //         console.log(`hello my name is ${this.imya}`); // this - > user
+    //     },
+    //     wife: {
+    //         name: 'anna',
+    //         hello() {
+    //             console.log(this.name); // this - > wife
+    //         },
+    //     }
+    // }
+    //
+    // // function  xxx() {
+    // //     console.log(this); // window
+    // // }
+    //
+    // // xxx();
+    //
+    // console.log(user);
+    // user.greeting();
+    // user.wife.hello();
+
+
+    // let arr = [11, 22, 33, [1, 2, 3], 234, 345, [111, 222, ['a', 'b', [true, false, [{foo: 'bar'}, {foo: 'bar2'},
+    //     {foo: 'bar3'},]]]]];
+    //
+    //
+    // let flatArray = [];
+    //
+    // function flatter(array) {
+    //     for (const item of array) {
+    //         if (Array.isArray(item)) {
+    //             flatter(item);
+    //         } else if (!Array.isArray(item) && typeof item === 'object') {
+    //             for (const itemKey in item) {
+    //                 flatArray.push(item[itemKey]);
+    //             }
+    //         } else {
+    //             flatArray.push(item);
+    //         }
+    //     }
+    // }
+    //
+    // flatter(arr);
+    // console.log(flatArray);
+
+
+    // function foobar(callback) {
+    //     callback();
+    // }
+    //
+    // let xxx = function () {
+    //     console.log('hello');
+    // };
+    // foobar(xxx);
+
+    // function calculator(a, b, action) {
+    //     action(10, 20);
+    // }
+    //
+    //
+    // calculator(10, 20, function (x, y) {
+    //     console.log(a + b);
+    // });
+    //
+    // calculator(100, 200, function (a, b) {
+    //     console.log(a + a + a + b / 2);
+    // });
+
+
+    function filter(arr, callback) {
+        let mas = [];
+        for (const item of arr) {
+            if (callback(item)) {
+                mas.push(item);
+            }
+        }
+        return mas;
+
+    }
+
+    // console.log(filter(
+    //     [3, 1, 2, -10, 100, 15, 454, 67, 689],
+    //     function (item) {
+    //         return item % 2 === 0
+    //     }
+    // ));
+
+    let users = [
+        {name: 'vasya', age: 31, status: false},
+        {name: 'petya', age: 30, status: true},
+        {name: 'kolya', age: 29, status: true},
+        {name: 'olya', age: 28, status: false},
+        {name: 'max', age: 30, status: true},
+        {name: 'anya', age: 31, status: false},
+        {name: 'oleg', age: 28, status: false},
+        {name: 'andrey', age: 29, status: true},
+        {name: 'masha', age: 30, status: true},
+        {name: 'olya', age: 31, status: false},
+        {name: 'max', age: 31, status: true}
+    ];
+    console.log(filter(users, function (item) {
+        return !item.status
+
+    }));
+
+
+</script>
+</body>
+</html>
