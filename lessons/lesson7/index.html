@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // let now = new Date();
+    // console.log(now);
+    // console.log(now.getFullYear());
+    // console.log(now.getMonth()); // 1 - feb 0 -jan
+    // console.log(now.getTime());
+    // console.log(now.getMilliseconds());
+
+
+    //1677001401533
+    // let snapshot = new Date(1677001401533);
+    // console.log(snapshot);
+
+
+    // let date = new Date(1990,0,30,12,10,5,300);
+    // console.log(date);
+
+
+    // let user = {
+    //     id: 1,
+    //     name: 'kokos',
+    //     bDay: new Date(1243162534612),
+    // }
+    // console.log(user);
+
+
+    // console.log('start');
+    //
+    // let obj = null;
+    // try {
+    //     console.log(obj.id);
+    // } catch (error) {
+    //     console.log(error);
+    // }
+    // console.log('end');
+
+
+    // function divider(a, b) {
+    //     if (b === 0) {
+    //         throw new Error('second arg cannot be ZERO');
+    //     }
+    //     let result = a / b;
+    //
+    //     return result;
+    //
+    // }
+    //
+    // try {
+    //     divider(10, 0);
+    // } catch (e) {
+    //     /// do some
+    // }
+
+
+    // function asd(obj) {
+    //     console.log(obj.inner?.id);
+    //
+    // }
+    //
+    // asd({});
+
+
+    // let name = 'kokos';
+    // let age = 123;
+    //
+    // let user = {
+    //     name,
+    //     age,
+    //     foobar() {
+    //
+    //     },
+    // }
+    // console.log(user);
+
+    let car = {
+        model: 'subaru',
+        power: 123,
+        drive() {
+        },
+        manufacturer: 'fhi'
+    }
+
+    // let model = car.model;
+    // let power = car.power;
+    // let drive = car.drive();
+    //
+    // let {model, power, drive} = car;
+    // console.log(model);
+
+    // function extractor({model,asd,qwe} ) {
+    //     console.log(model);
+    // }
+    //
+    // extractor({model: 'asd', a: 123, b: 345, c: 'asdqweqwe'})
+    // extractor({model: 'asd', kokos: 'asdqweqwe'})
+
+    // let user = {
+    //     name: 'kokos',
+    //     age: 31,
+    //     wife: {
+    //         name: 'anna'
+    //     }
+    // }
+
+    // let {wife, name} = user;
+    // console.log(name);
+    // console.log(wife);
+    //
+    // let {name: wifeName} = wife;
+    // console.log(wifeName);
+
+    // let {name, wife, wife: {name: wifeName}} = user;
+    //
+    // console.log(name, wifeName, wife);
+
+
+    // let [a,,c,d] = [11, 22, 33, 44];
+    // console.log(a, c, d);
+
+    //
+    // let products = [
+    //     {
+    //         title: 'milk',
+    //         price: 22,
+    //         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    //     },
+    //     {
+    //         title: 'juice',
+    //         price: 27,
+    //         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    //     },
+    //     {
+    //         title: 'tomato',
+    //         price: 47,
+    //         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    //     },
+    //     {
+    //         title: 'tea',
+    //         price: 15,
+    //         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+    //     },
+    // ];
+    //
+    //
+    // let [first, second, third, {title}] = products;
+    // console.log(title);
+
+
+    // let user = {
+    //     name: 'kokos',
+    //     age: 31,
+    //     wife: {
+    //         name: 'anna'
+    //     }
+    // }
+
+    // let user2 = user;
+    // console.log(user === user2);
+    //
+    // let userCopy = {...user};
+    // let userCopy = {...user, age: 123};
+    // console.log(userCopy === user); // false
+
+    // let user3 = {...user};
+    // let user3 = {...user, wife: {...user.wife}};
+    // console.log(user3 === user); // false
+    // console.log(user3.wife === user.wife); // true
+    //
+    // let clone = structuredClone(user);
+    // console.log(clone.wife === user.wife);
+
+    let user = {
+        name: 'vasya',
+        greeting: function () {
+
+        },
+        wife: {}
+    };
+
+    let s = JSON.stringify(user);
+    console.log(s);
+    let parse = JSON.parse(s);
+    console.log(parse);
+
+    // const structuredClone1 = structuredClone(user);
+    // console.log(structuredClone1);
+
+    // let nums = [11, 22, 33, 44];
+    // let arr = [...nums];
+
+
+    let cloneUser = Object.assign({}, user);
+    console.log(cloneUser === user);
+    console.log(cloneUser.wife === user.wife);
+
+    let x = JSON.parse(JSON.stringify(user));
+    console.log(x.wife === user.wife);
+
+
+</script>
+</body>
+</html>
