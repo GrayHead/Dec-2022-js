@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 class="a b c" attr="foo"><span>DOM</span> title</h1>
+
+<ul class="menu" id="list-1">
+    <li>item 1 1</li>
+    <li>item 1 2</li>
+    <li>item 1 3</li>
+    <li>item 1 4</li>
+    <li>item 1 5</li>
+</ul>
+
+<ul class="menu" id="list-2">
+    <li>item 2 1</li>
+    <!--    foobar-->
+    <li>item 2 2</li>
+    <li>item 2 3</li>
+    <li>item 2 4</li>
+    <li>item 2 5</li>
+</ul>
+
+<script>
+    // console.log(document);
+    // console.log(document.head);
+    // console.log(document.head.innerHTML);
+    //
+    // console.log(document);
+    // console.log(document.body);
+
+    //     ID
+
+    // let byId1 = document.getElementById('list-1');
+    // console.log(byId1);
+
+
+    // CLASS
+    // let ulS = document.getElementsByClassName('menu');
+    // console.log(ulS); // [ul,ul]
+    // let ul1 = ulS[0];
+    // console.log(ul1);
+    // let ul2 = ulS[1];
+    // console.log(ul2);
+
+    // for (const ul of ulS) {
+    //     console.log(ul);
+    //
+    // }
+
+
+    // let ulS_tagSearch = document.getElementsByTagName('ul');
+    // console.log(ulS_tagSearch);
+    // for (const item of ulS_tagSearch) {
+    //     console.log(item);
+    // }
+
+    // let h1List = document.getElementsByTagName('h1'); // [h1]
+
+
+    // let liList = document.getElementsByTagName('li');
+    // console.log(liList);
+    //
+    // console.log(
+    //     document
+    //         .getElementsByTagName('ul')
+    //         [1]
+    //         .getElementsByTagName('li')
+    // );
+
+    // let h1List = document.getElementsByTagName('h1');
+    // let h1 = h1List[0];
+    // console.log(h1)
+    // console.log(h1.innerText)
+    // console.log(h1.innerHTML)
+    // h1.innerText = 'hello';
+    // h1.innerHTML = '<i>hello</i>';
+    // h1.style.background = 'silver';
+    // console.log(h1.classList);
+    // h1.classList.add('target');
+    // h1.classList.remove('target');
+    // h1.classList.toggle('target');
+    //
+    // h1.setAttribute('asd', 'xxx');
+    // console.log(h1.getAttribute('attr')); // foo
+    //
+    // console.log(h1.nextElementSibling);
+
+    // let menus = document.getElementsByClassName('menu');
+    // for (const menu of menus) {
+    //     menu.style.fontSize = '10px';
+    // }
+
+
+    //children
+
+    // let ul2 = document.getElementById('list-2');
+    // let children = ul2.children;
+    // console.log(children);
+    // let childNodes = ul2.childNodes;
+    // console.log(childNodes);
+    // for (const item of childNodes) {
+    //
+    //     if (item.nodeType === 1) {
+    //         console.log(item, 'tag');
+    //     }else if (item.nodeType === 3) {
+    //         console.log('text');
+    //     }else if (item.nodeType === 8) {
+    //         console.log('comment');
+    //     }
+    // }
+
+    // let element = document.querySelector('ul'); // one element
+    // console.log(element);
+    // let nodeListOfUl = document.querySelectorAll('ul#list-1.menu > li');// [node]
+
+    // let nodeListOfUl =
+    //     document
+    //         .querySelectorAll('ul#list-1.menu');// [node] // snapshot
+    // console.log(nodeListOfUl);
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
