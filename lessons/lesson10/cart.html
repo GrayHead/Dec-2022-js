@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+    let cartJSON = localStorage.getItem('cart');
+    let cartArray = JSON.parse(cartJSON);
+    for (const item of cartArray) {
+        //....dom create
+        let divElement = document.createElement('div');
+        divElement.innerText = item.title;
+        document.body.append(divElement);
+    }
+</script>
+</body>
+</html>

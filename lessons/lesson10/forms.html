@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/someURL" name="f1" enctype="multipart/form-data">
+    <input
+            type="text"
+            value=""
+            placeholder="enter your name"
+            name="username">
+    <br>
+
+    <!--    <input-->
+    <!--            type="password"-->
+    <!--            name="password"-->
+    <!--            placeholder="endeter password"-->
+    <!--            minlength="3"-->
+
+    <!--    >-->
+    <!--    <br>-->
+    <!--    <input-->
+    <!--            type="number"-->
+    <!--            name="age"-->
+    <!--            placeholder="age input"-->
+    <!--            min="3"-->
+    <!--            max="7"-->
+    <!--            required-->
+    <!--    >-->
+    <!--    <br>-->
+    <!--    &lt;!&ndash;    <input type="file" name="avatar">&ndash;&gt;-->
+    <!--    &lt;!&ndash;    <br>&ndash;&gt;-->
+    <!--    <input type="email" name="email" placeholder="eneter email">-->
+    <!--    <br>-->
+    <!--    <input type="date" name="date" placeholder="">-->
+    <!--    <br>-->
+    <!--    <label>-->
+    <!--        status-->
+    <!--        <input type="checkbox" name="status">-->
+    <!--    </label>-->
+    <!--    <br>-->
+    <!--    <div>-->
+    <!--        choose gender-->
+    <!--        <br>-->
+    <!--        <label>-->
+    <!--            male <input type="radio" name="gender" value="male"></label>-->
+    <!--        <label>-->
+    <!--            Female-->
+    <!--            <input type="radio" name="gender" value="female"></label>-->
+    <!--    </div>-->
+
+    <!--    <select name="skills" multiple>-->
+    <!--        <option value="js" selected>JavaScript</option>-->
+    <!--        <option value="java8">java 8</option>-->
+    <!--        <option value="java9">java 9</option>-->
+    <!--        <option value="html" selected>hyper text markup language</option>-->
+    <!--    </select>-->
+    <!--    <input type="submit">-->
+    <button name="send" disabled>send</button>
+
+</form>
+
+<!--username=tepytazy-->
+<!--&-->
+<!--password=Pa%24%24w0rd%21-->
+<!--&-->
+<!--age=5-->
+<!--&-->
+<!--email=popujehobi%40mailinator.com-->
+<!--&-->
+<!--date=1996-01-22-->
+<!--&-->
+<!--status=on-->
+<!--&-->
+<!--gender=female-->
+<!--&-->
+<!--skills=java8-->
+<!--&-->
+<!--skills=html-->
+<script>
+
+    console.log(document.forms); // [form]
+    console.log(document.forms[0]);
+    console.log(document.forms.f1);
+    console.log(document.forms.f1.username);
+    console.log(document.forms.f1.username.value);
+    console.log(document.forms.f1.send.disabled);
+
+
+</script>
+</body>
+</html>
