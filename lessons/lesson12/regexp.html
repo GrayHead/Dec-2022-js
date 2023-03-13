@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form>
+    <input type="text" name="username" pattern="[a-zA-Z]{3,6}">
+    <input type="text" name="phone">
+    <button>send</button>
+
+</form>
+<script>
+
+    let phone = '+38067-123-12-34';
+    let match = phone.matchAll(/\+380\d{2}\-?\d{3}\-?\d{2}\-?\d{2}/g);
+    console.log(match);
+
+
+</script>
+</body>
+</html>

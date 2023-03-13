@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    // let url = new URL("http://localhost:63342/Dec-2022-js/lessons/lesson12/index.html?foo=bar&asd=qwe");
+    // console.log(url);
+    //
+    // console.log(url.searchParams);
+    // url.searchParams.set('xxx', 888);
+    // url.searchParams.set('yyy', {});
+    // console.log(url);
+    // let fooParamValue = url.searchParams.get('foo');
+    // console.log(fooParamValue);
+
+
+    let url = new URL('https://jsonplaceholder.typicode.com/posts');
+    fetch(url)
+        .then(value => value.json())
+        .then(posts => {
+            for (const post of posts) {
+                let div = document.createElement('div');
+                div.classList.add('post-item')
+                let a = document.createElement('a');
+                a.innerText = `${post.id} ${post.title}`;
+                a.href = 'post.html?data=' + JSON.stringify(post);
+                div.appendChild(a);
+                document.body.appendChild(div);
+            }
+
+
+        });
+
+</script>
+</body>
+</html>

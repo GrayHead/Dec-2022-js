@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+<h2>post details page</h2>
+<script>
+
+
+    let url = new URL(location.href);
+    let json = url.searchParams.get('data');
+    let post = JSON.parse(json);
+    console.log(post);
+</script>
+</body>
+</html>
